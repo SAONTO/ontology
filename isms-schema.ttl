@@ -2,7 +2,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix ismss: <file:///var/www/html/isms/rdf/isms-schema.ttl#> .
+@prefix ismss: <https://github.com/SAONTO/ontology/blob/master/isms-schema.ttl#> .
 
 <file:///var/www/html/isms/rdf/isms-schema.ttl> rdf:type owl:Ontology .
 
