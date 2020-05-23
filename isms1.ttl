@@ -1,0 +1,79 @@
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlInformationSecurityTools> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlInformationSecurityTools> <http://www.w3.org/2000/01/rdf-schema#label> "СЗИ"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlInformationSecurityTools> <http://www.w3.org/2000/01/rdf-schema#comment> "Класс для средств защиты информации (СЗИ)"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlSCPI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlSCPI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlInformationSecurityTools> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlSCPI> <http://www.w3.org/2000/01/rdf-schema#label> "СКЗИ"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlSCPI> <http://www.w3.org/2000/01/rdf-schema#comment> "Cистемы криптографической защиты информации (СКЗИ)"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlSpecs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlSpecs> <http://www.w3.org/2000/01/rdf-schema#label> "Категория ИС"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlSpecs> <http://www.w3.org/2000/01/rdf-schema#comment> "Класс для описаний, которые характеризуют информационные системы с технической и организационнной стороны, а также по требованиям регулятора"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlIS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlIS> <http://www.w3.org/2000/01/rdf-schema#label> "ИС"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlIS> <http://www.w3.org/2000/01/rdf-schema#comment> "Класс информационных систем, в отношении которых формируются требования по защите информации"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlISPD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlISPD> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlIS> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlISPD> <http://www.w3.org/2000/01/rdf-schema#label> "ИСПДн"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlISPD> <http://www.w3.org/2000/01/rdf-schema#comment> "Информационные системы персональных данных (ИСПДн)"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlSIS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlSIS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlIS> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlSIS> <http://www.w3.org/2000/01/rdf-schema#label> "ГИС"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlSIS> <http://www.w3.org/2000/01/rdf-schema#comment> "Государственные информационные системы (ГИС)"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlC_SIS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlC_SIS> <http://www.w3.org/2000/01/rdf-schema#label> "ГИС"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlC_SIS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlSIS> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlC_SIS> <http://www.w3.org/2000/01/rdf-schema#comment> "Контейнер для ГИС"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlC_ISPD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlC_ISPD> <http://www.w3.org/2000/01/rdf-schema#label> "ИСПДн"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlC_ISPD> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlISPD> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlC_ISPD> <http://www.w3.org/2000/01/rdf-schema#comment> "Контейнер для ИСПДн"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlProtectiveMeasures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlProtectiveMeasures> <http://www.w3.org/2000/01/rdf-schema#label> "Мера защиты"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlProtectiveMeasures> <http://www.w3.org/2000/01/rdf-schema#comment> "Меры и требования по обеспечению безопасности информации в информационных системах"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlLegalActs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlLegalActs> <http://www.w3.org/2000/01/rdf-schema#label> "НПА"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlLegalActs> <http://www.w3.org/2000/01/rdf-schema#сomment> "Класс для нормативных правовых актов, определяющих меры и требования по обеспечению безопасности автоматизированных систем, а также порядок разработки, изготовления, и обеспечения эксплуатации автоматизированных систем"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlThreatsOfSecurity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlThreatsOfSecurity> <http://www.w3.org/2000/01/rdf-schema#label> "УБИ"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlThreatsOfSecurity> <http://www.w3.org/2000/01/rdf-schema#сomment> "Угрозы безопасности информации"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlpossibleImplementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlpossibleImplementation> <http://www.w3.org/2000/01/rdf-schema#label> "В ИС возможна рализация УБИ"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlpossibleImplementation> <http://www.w3.org/2000/01/rdf-schema#comment> "В результате наличия субъекта (техническая и эксплуатационная характеристика ИС) возможна реализация объекта (угроза безопасности информации)"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlpossibleImplementation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlIS> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlpossibleImplementation> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlThreatsOfSecurity> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlacting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlacting> <http://www.w3.org/2000/01/rdf-schema#label> "Действующий/недействующий НПА"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlacting> <http://www.w3.org/2000/01/rdf-schema#сomment> "Информация о статусе НПА: действующий - true, отмененный - false"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlacting> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlLegalActs> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlacting> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlisNecessaryFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlisNecessaryFor> <http://www.w3.org/2000/01/rdf-schema#label> "Мера необходима для ИС"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlisNecessaryFor> <http://www.w3.org/2000/01/rdf-schema#comment> "Субъект (мера, сведения) требуется для (реализации системы защиты в информационной системе, оформления аттестационных документов, мера защиты)"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlisNecessaryFor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlProtectiveMeasures> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlisNecessaryFor> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlIS> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlhelpsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlhelpsTo> <http://www.w3.org/2000/01/rdf-schema#label> "Мера может применяться для ИС"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlhelpsTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Субъект (мера, сведения) может использоваться для (реализации системы защиты в информационной системе, оформления аттестационных документов, мера защиты)"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlhelpsTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlProtectiveMeasures> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlhelpsTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlIS> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlisReducedDue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlisReducedDue> <http://www.w3.org/2000/01/rdf-schema#label> "УБИ блокируется мерой"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlisReducedDue> <http://www.w3.org/2000/01/rdf-schema#сomment> "Субъект (УБИ) блокируется или снижается вероятность его реализации при наличии объекта (мера по обеспечению информационной безопасности)"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlisReducedDue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlThreatsOfSecurity> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlisReducedDue> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlProtectiveMeasures> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlspec> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlspec> <http://www.w3.org/2000/01/rdf-schema#label> "ИС описывается категорией"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlspec> <http://www.w3.org/2000/01/rdf-schema#comment> "Субъект (компьютерная система) описывается объектом (категория описания системы)"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlspec> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlIS> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlspec> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlSpecs> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlforMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlforMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "СЗИ для реализации меры"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlforMeasure> <http://www.w3.org/2000/01/rdf-schema#comment> "Субъект (СЗИ) предназначен для реализации объекта (мера по защите информации)"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlforMeasure> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlInformationSecurityTools> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlforMeasure> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlProtectiveMeasures> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlforThreat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlforThreat> <http://www.w3.org/2000/01/rdf-schema#label> "СЗИ для блокирования УБИ"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlforThreat> <http://www.w3.org/2000/01/rdf-schema#comment> "Субъект (СЗИ) предназначен для блокирования объекта (УБИ) или снижения вероятности его реализации"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlforThreat> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlInformationSecurityTools> .
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlforThreat> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/SAONTO/ontology/blob/master/isms-schema.ttlThreatsOfSecurity> .
