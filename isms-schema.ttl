@@ -1,0 +1,108 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ismss: <https://github.com/SAONTO/ontology/blob/master/isms-schema.ttl> .
+
+<https://github.com/SAONTO/ontology/blob/master/isms-schema.ttl> rdf:type owl:Ontology .
+
+ismss:InformationSecurityTools rdf:type rdfs:Class ;
+	rdfs:label "СЗИ"@ru ;
+	rdfs:comment "Класс для средств защиты информации (СЗИ)"@ru .
+
+ismss:SCPI rdf:type rdfs:Class ;
+	rdfs:subClassOf ismss:InformationSecurityTools ;
+	rdfs:label "СКЗИ"@ru ;
+	rdfs:comment "Cистемы криптографической защиты информации (СКЗИ)"@ru .
+
+ismss:Specs rdf:type rdfs:Class ;
+	rdfs:label "Категория ИС"@ru ;
+	rdfs:comment "Класс для описаний, которые характеризуют информационные системы с технической и организационнной стороны, а также по требованиям регулятора"@ru .
+
+ismss:IS rdf:type rdfs:Class ;
+	rdfs:label "ИС"@ru ;
+	rdfs:comment "Класс информационных систем, в отношении которых формируются требования по защите информации"@ru .
+
+ismss:ISPD rdf:type rdfs:Class ;
+	rdfs:subClassOf ismss:IS ;
+	rdfs:label "ИСПДн"@ru ;
+	rdfs:comment "Информационные системы персональных данных (ИСПДн)"@ru .
+
+ismss:SIS rdf:type rdfs:Class ;
+	rdfs:subClassOf ismss:IS ;
+	rdfs:label "ГИС"@ru ;
+	rdfs:comment "Государственные информационные системы (ГИС)"@ru .
+
+ismss:C_SIS rdf:type rdf:Bag ;
+	rdfs:label "ГИС"@ru ;
+	rdfs:subClassOf ismss:SIS ;
+	rdfs:comment "Контейнер для ГИС"@ru .
+
+ismss:C_ISPD rdf:type rdf:Bag ;
+	rdfs:label "ИСПДн"@ru ;
+	rdfs:subClassOf ismss:ISPD ;
+	rdfs:comment "Контейнер для ИСПДн"@ru .
+
+ismss:ProtectiveMeasures rdf:type rdfs:Class ;
+	rdfs:label "Мера защиты"@ru ;
+	rdfs:comment "Меры и требования по обеспечению безопасности информации в информационных системах"@ru .
+
+ismss:LegalActs rdf:type rdfs:Class ;
+	rdfs:label "НПА"@ru ;
+	rdfs:сomment "Класс для нормативных правовых актов, определяющих меры и требования по обеспечению безопасности автоматизированных систем, а также порядок разработки, изготовления, и обеспечения эксплуатации автоматизированных систем"@ru .
+
+ismss:ThreatsOfSecurity rdf:type rdfs:Class ;
+	rdfs:label "УБИ"@ru ;
+	rdfs:сomment "Угрозы безопасности информации"@ru .
+
+ismss:possibleImplementation rdf:type rdf:Property ;
+	rdfs:label "В ИС возможна рализация УБИ"@ru ;
+	rdfs:comment "В результате наличия субъекта (техническая и эксплуатационная характеристика ИС) возможна реализация объекта (угроза безопасности информации)"@ru ;
+	rdfs:domain ismss:IS ;
+	rdfs:range ismss:ThreatsOfSecurity .
+
+ismss:acting rdf:type rdf:Property ;
+	rdfs:label "Действующий/недействующий НПА"@ru ;
+	rdfs:сomment "Информация о статусе НПА: действующий - true, отмененный - false"@ru ;
+	rdfs:domain ismss:LegalActs ;
+	rdfs:range xsd:boolean .
+
+ismss:isNecessaryFor rdf:type rdf:Property ;
+	rdfs:label "Мера необходима для ИС"@ru ;
+	rdfs:comment "Субъект (мера, сведения) требуется для (реализации системы защиты в информационной системе, оформления аттестационных документов, мера защиты)"@ru ;
+	rdfs:domain ismss:ProtectiveMeasures ;
+	rdfs:range ismss:IS .
+
+ismss:helpsTo rdf:type rdf:Property ;
+	rdfs:label "Мера может применяться для ИС"@ru ;
+	rdfs:comment "Субъект (мера, сведения) может использоваться для (реализации системы защиты в информационной системе, оформления аттестационных документов, мера защиты)"@ru ;
+	rdfs:domain ismss:ProtectiveMeasures ;
+	rdfs:range ismss:IS .
+
+ismss:isReducedDue rdf:type rdf:Property ;
+	rdfs:label "УБИ блокируется мерой"@ru ;
+	rdfs:сomment "Субъект (УБИ) блокируется или снижается вероятность его реализации при наличии объекта (мера по обеспечению информационной безопасности)"@ru ;
+	rdfs:domain ismss:ThreatsOfSecurity ;
+	rdfs:range ismss:ProtectiveMeasures .
+
+ismss:spec rdf:type rdf:Property ;
+	rdfs:label "ИС описывается категорией"@ru ;
+	rdfs:comment "Субъект (компьютерная система) описывается объектом (категория описания системы)"@ru ;
+	rdfs:domain ismss:IS ;
+	rdfs:range ismss:Specs .
+
+ismss:forMeasure rdf:type rdf:Property ;
+	rdfs:label "СЗИ для реализации меры"@ru ;
+	rdfs:comment "Субъект (СЗИ) предназначен для реализации объекта (мера по защите информации)"@ru ;
+	rdfs:domain ismss:InformationSecurityTools ;
+	rdfs:range ismss:ProtectiveMeasures .
+
+ismss:forThreat rdf:type rdf:Property ;
+	rdfs:label "СЗИ для блокирования УБИ"@ru ;
+	rdfs:comment "Субъект (СЗИ) предназначен для блокирования объекта (УБИ) или снижения вероятности его реализации"@ru ;
+	rdfs:domain ismss:InformationSecurityTools ;
+	rdfs:range ismss:ThreatsOfSecurity .
+
+
+
