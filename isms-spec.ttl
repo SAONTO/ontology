@@ -1,0 +1,5 @@
+<https://github.com/SAONTO/ontology/blob/master/isms-spec.ttl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://github.com/SAONTO/ontology/blob/master/isms-spec.ttl#SpecId1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/SAONTO/ontology/blob/master/isms-schema.ttl#Specs> .
+<https://github.com/SAONTO/ontology/blob/master/isms-spec.ttl#SpecId1> <http://www.w3.org/2000/01/rdf-schema#comment> "Технические характеристики ИС"@ru .
+<https://github.com/SAONTO/ontology/blob/master/isms-spec.ttl#SpecId2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/SAONTO/ontology/blob/master/isms-schema.ttl#Specs> .
+<https://github.com/SAONTO/ontology/blob/master/isms-spec.ttl#SpecId2> <http://www.w3.org/2000/01/rdf-schema#comment> "Эксплуатационные характеристики ИС"@ru .
